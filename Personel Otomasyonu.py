@@ -32,15 +32,3 @@ if zam_guncelleme in personel.keys():
             print("{} -> {}".format(per_bilgi, personel[per_id][per_bilgi]))
 else:
     print("Girdiginiz id sahip bir calisan bulunamadi.")
-"""golSayisi_prim = list()
-        golSayisi = int(input("{}. ID'deki futbolcunun attigi gol sayisi kactir:".format(ID)))
-        Prim = golSayisi + (golSayisi * 40)
-        print("Atilan gol sayisina gore futbolcuya odenecek prim miktari : {}".format(Prim))
-        golSayisi_prim.append(golSayisi)
-        golSayisi_prim.append(Prim)
-
-        for fut_id in bilgiler.keys():
-            if fut_id == ID:
-                futbolcu_bilgisi.update({"Gol-Prim":golSayisi_prim})
-        for fut_bilgi in bilgiler[ID].keys():
-            print("{} -> {}".format(fut_bilgi, bilgiler[ID][fut_bilgi]))"""
