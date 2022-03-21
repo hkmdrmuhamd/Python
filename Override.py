@@ -1,26 +1,43 @@
-class Class1():
-    def __init__(self):
-        print("Class 1 created")
+"""class Bird:
+    def into(self):
+        print("There are any type of bird")
+    def flight(self):
+        print("Most of the birds can fly")
 
-    def method_1(self):
-        print("method 1")
+class sparrow(Bird):
+    def flight(self):
+        print("sparrow can fly")
 
-    def method_2(self):
-        print("method 2")
+class ostrich(Bird):
+    def flight(self):
+        print("ostrich can't fly")
 
-#my_example = Class1()
+obj_bird = Bird()
+obj_spr = sparrow()
+obj_ost = ostrich()
+obj_spr.into()
+obj_spr.flight()#Override islemi gerceklesti(sparrow icindeki printi aldi)
+obj_ost.into()
+obj_ost.flight()#Override islemi gerceklesti(ostrich icindeki printi aldi)
+obj_bird.flight()"""
 
-class Class2(Class1):
-    def __init__(self):
-        Class1.__init__(self)
-        print("Class 2 created")
+"""class vehicle:
+    def max_speed(self):
+        print("max speed is 100")
 
-    def method_3(self):
-        print("method 3")
+class Car(vehicle):
+    def max_speed(self):
+        print("Max speed is 200")
 
-                             #OVERRİDE
-    def method_1(self):
-        print("method 1 override edildi")
+car_obj = Car()
+car_obj.max_speed()"""
 
-my_example2 = Class2()
-my_example2.method_1()
+class message:
+    def detalis(self,phrase = None):
+        if phrase is not  None:
+            print("Mesaj"+phrase)
+        else:
+            print("Merhaba")
+
+obj = message()
+obj.detalis()
